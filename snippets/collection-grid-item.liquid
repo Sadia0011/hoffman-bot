@@ -13,7 +13,25 @@
     Usage:
     {% render 'collection-grid-item', block: block, animation_delay: animation_delay, animation_anchor: animation_anchor, aspect_ratio: aspect_ratio, index: index %}
 {% endcomment %}
-
+<style>
+  .custom-collection-item__info{
+    position: absolute;
+    top: 9px;
+    left: 7px;
+    background-color: antiquewhite;
+    padding: 5px;
+  }
+  .custom-collection-gallery-text-icon-wrapper{
+    position: absolute;
+    bottom: 2rem;
+    left: 2rem;
+  }
+  .custom-collection-gallery-text-icon-wrapper a{
+    color: white;
+    background: #131313;
+    padding: 3px;
+  }
+</style>
 {%- liquid
   assign layout = section.settings.layout
   assign collection = collections[block.settings.collection]
@@ -87,8 +105,11 @@
         -%}
       </div>
     </div>
-
-    <div class="collection-item__info"
+    <div class="custom-collection-gallery-text-icon-wrapper">
+        <a href="{{ collection.url }}">JETZT AUSWÄHLEN</a>
+        <i class="fa fa-angle-right collection-gallery-menu-item-icon"></i>
+    </div>
+    <div class="custom-collection-item__info collection-item__info"
       data-aos="fade"
       data-aos-anchor="{{ animation_anchor }}"
       data-aos-delay="{{ animation_delay | times: 150 }}"
