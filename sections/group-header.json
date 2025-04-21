@@ -73,11 +73,11 @@
         "toolbar"
       ],
       "custom_css": [
-        ".parent .navlink--toplevel:hover{background-color: #d9dcde;}",
+        ".parent .navlink--toplevel:hover {background-color: #d9dcde;}",
         ".parent .navlink--child {margin-right: 0;}",
         ".header__dropdown {top: 80%; left: 0; width: 100%;}",
         ".parent .header__dropdown__inner {display: flex; flex-direction: row; justify-content: flex-start; align-items: center; gap: 1rem; padding-left: 2rem; font-size: 18px;}",
-        ".custom-navtext:hover {text-transform: underline;}"
+        ".custom-navtext:hover {text-decoration: underline;}"
       ],
       "settings": {
         "header_sticky": true,
