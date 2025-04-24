@@ -60,10 +60,10 @@
         "tabs": {
           "type": "tab_richtext",
           "settings": {
-            "show_description": true,
+            "show_description": false,
             "show_read_more": true,
-            "title_1": "",
-            "raw_content_1": "",
+            "title_1": "Descriptoin",
+            "raw_content_1": "{{ product.description }}",
             "title_2": "",
             "raw_content_2": "",
             "title_3": "",
